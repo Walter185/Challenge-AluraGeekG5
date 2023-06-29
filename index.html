@@ -2,35 +2,40 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <title>Walter´s AluraGeek</title>
 </head>
 <body>
-    <nav>    
-        <div class="logo">
-            <div class="logo__container">
-                <img src="./assets/img/logo.png" alt="logo" />
-                <p>Alura</p>
-                <p>Geek</p>
-            </div>
-            <imput type="text" placeholder="¿Qué deseas búscar?" />
-            <div class="login">
-                <a href="login.html">
-                    <button type="submit">Login</button>
-                </a>
-            </div>
-        </div>
-    </nav>
     <header>
+        <nav>    
+            <div class="container">
+                <div class="logo__container">
+                    <img class="logo__img" src="./assets/img/logo.png" alt="logo" />
+                    <p class="logo__descripcion1">Alura</p>
+                    <p class="logo__descripcion2">Geek</p>
+                </div>
+                <input class="logo__input" type="text" placeholder="¿Qué deseas búscar?" />
+                <div class="login">
+                    <a href="login.html">
+                        <button class="login__btn" type="submit">Login</button>
+                    </a>
+                </div>
+            </div>
+        </nav>   
+    </header>
+    
+    <section>
        <div class="header__background"></div>
         <div class="header__promotions">
             <h1>Febrero Promocional</h1>
             <p>Productos seleccionados con 33% de descuento</p>
         </div> 
-    </header>
+    </section>
         <main>
 
         </main>

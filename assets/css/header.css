@@ -1,0 +1,96 @@
+a {
+  text-decoration: none;
+  color: #2a7ae4;
+  font-weight: 800;
+  font-family: "Releway", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  padding: 30px;
+  background-color: #ffff;
+}
+
+.container, nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.logo {
+  width: 601px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    height: 29.17px;
+    width: 40.02px;
+}
+
+.logo__descripcion1 {
+    font-size: 26px;
+    font-weight: bolder;
+    margin-left: 10px;
+    color: #2a7ae4;
+}
+
+.logo__descripcion2 {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.logo__input {
+    margin-left: 10%;
+    width: 393px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 1% 3%;
+    border: none;
+    background-color: #efefef;
+    background-image: url("../img/lupa.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 320px;
+}
+
+.logo__input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.logo__input::placeholder {
+  color: #d4d4d4;
+  padding: 2%;
+}
+
+.login {
+    width: 600px;
+    display: flex;
+    justify-content: end;
+}
+
+.login__btn {
+    width: 182px;
+    height: 51px;
+    background: none;
+    border: solid 1px #2a7ae4;
+    color: #2a7ae4;
+    text-transform: uppercase;
+}
+
+.login__btn:hover {
+    background-color: #2a7ae4;
+    color: #ffff;
+}
