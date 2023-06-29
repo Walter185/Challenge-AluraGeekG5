@@ -1,0 +1,109 @@
+{
+    "producto": [
+        {
+            "id": 1,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 2,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 3,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 4,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 5,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 6,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 7,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 8,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 9,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 10,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 11,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 12,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 13,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 14,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        },
+        {
+            "id": 15,
+            "name": "PRODUCTO XYZ",
+            "imageUrl": "",
+            "price": 60.00,
+            "description": ""
+        }
+    ]
+}
