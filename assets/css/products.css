@@ -1,0 +1,28 @@
+
+.vertodo {
+    font-weight: bold;
+	margin-top: 25px;
+	color: #2a7ae4;
+	display: flex;
+	padding: 30px;
+}
+.vertodo__container {
+    text-decoration: none;
+    color: #2a7ae4;
+    font-weight: 800;
+    font-family: "Releway", sans-serif;
+}
+
+.productos__container {
+    padding: 20px 110px 0px 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.productos__titulo {
+    font-size: 32px;
+	font-weight: bold;
+	padding: 30px;
+	color: #464646;
+}

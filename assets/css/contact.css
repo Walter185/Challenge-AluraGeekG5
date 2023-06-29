@@ -1,0 +1,7 @@
+.contact {
+    background-color: #eaf2fd;
+    display: flex;
+    height: 365px;
+    justify-content: center;
+    padding: 64px 0;
+}
