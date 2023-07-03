@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/assets/img/logo.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <!-- <link rel="stylesheet" href="../assets/css/banner.css"> -->
+    <link rel="stylesheet" href="../assets/css/footer.css">
 
     <link rel="stylesheet" href="../assets/css/login.css">
     <title>AluraGeek | Login</title>
@@ -16,7 +18,7 @@
     <header class="encabezado container">
     <div class="encabezado__container">
         <div class="logo__container">
-            <a href="/"><img class="logo__img" src="../assets/img/logo.png" alt="logo" /></a>
+            <a href="/"><img class="logo__img" src="../assets/img/logo1.png" alt="logo" /></a>
             <input class="logo__texto" type="text" placeholder="¿Qué deseas búscar?" />
             <div class="logo__texto__lupa">
             <img src="../assets/img/lupa.png" alt="lupa">
@@ -27,14 +29,62 @@
     <form class="login__form">
         <label class="login__titulo">Iniciar Sesión</label>
         <div class="login__container__input">
-            <input />
-            <label></label>
+            <input type="email" class="input__login" placeholder="Escriba su correo electrónico"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Email'" id="email" required>
+            <label class="input__titulo">Email</label>
         </div>
         <div class="login__container__input">
-            <input />
-            <label></label>
+            <input type="password" class="input__login" placeholder="Escriba su contraseña"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Contraseña'" id="contraseña" required>
+            <label class="input__titulo">Contraseña</label>
         </div>
+        <button class="login__btn">Ingresar</button>
     </form>
 </main>
+<!-------------------------------------->
+
+<footer class="pie">
+    <div class="pie__container">
+        <div class="pie__items">
+            <img class="pie__img" src="../assets/img/logo1.png" alt="logo" />      
+            <nav class="pie__nav">
+                <ul class="pie__lista">
+                    <li class="pie__btn"><a class="pie__link" href="">Quienes somos</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Política de Privacidad</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Programa de fidelidad</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Nuestras Tiendas</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Quiero ser franquiciado</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Anuncie aquí</a></li>
+                </ul>            
+            </nav>
+        </div>
+    <form class="contact__form">
+        <label class="contact__form__descripcion">Hable con nosotros</label>
+        <div class="form__input">
+            <div class="form__nombre__float">
+                <input class="form__nombre" type="text" placeholder="Nombre"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='Nombre'" id="formNombre" required />
+                <label class="label__nombre">Nombre</label>
+            </div>
+        <textarea class="form__mensaje" placeholder="Escriba su mensaje" id="formMensaje" required></textarea>
+        </div>
+        <button type="submit" value="Enviar mensaje" class="form__btn" id="formBtn">Enviar Mensaje</button>
+    </form>
+</div>
+    <div class="pie__info">
+        <p class="pie__nombre">Desarrollado por Walter Liendo @2023</p>
+    </div>
+</footer>
+    
+        <main>
+
+        </main>
+    <footer>
+        
+    </footer>
+    <script src="../assets/js/index.js" type="module"></script>
 </body>
 </html>
