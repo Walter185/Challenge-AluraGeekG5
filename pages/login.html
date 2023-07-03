@@ -26,21 +26,31 @@
     </div>
     </header>
 <main class="login__container">
-    <form class="login__form">
+    <form class="login__form" data-form>
         <label class="login__titulo">Iniciar Sesión</label>
         <div class="login__container__input">
-            <input type="email" class="input__login" placeholder="Escriba su correo electrónico"
+            <input 
+            type="email" 
+            class="input__login" 
+            placeholder="Escriba su correo electrónico"
             onfocus="this.placeholder=''"
-            onblur="this.placeholder='Email'" id="email" required>
+            onblur="this.placeholder='Email'"
+            data-email
+            required>
             <label class="input__titulo">Email</label>
         </div>
         <div class="login__container__input">
-            <input type="password" class="input__login" placeholder="Escriba su contraseña"
+            <input 
+            type="password" 
+            class="input__login" 
+            placeholder="Escriba su contraseña"
             onfocus="this.placeholder=''"
-            onblur="this.placeholder='Contraseña'" id="contraseña" required>
+            onblur="this.placeholder='Contraseña'" 
+            data-password
+            required>
             <label class="input__titulo">Contraseña</label>
         </div>
-        <button class="login__btn">Ingresar</button>
+        <button type="submit" class="login__btn">Entrar</button>
     </form>
 </main>
 <!-------------------------------------->

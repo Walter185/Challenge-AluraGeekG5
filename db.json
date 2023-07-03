@@ -3,9 +3,9 @@
         {
             "id": 1,
             "name": "PRODUCTO XYZ",
-            "imageUrl": "",
+            "imageUrl": "assets/img/atari.png",
             "price": 60.00,
-            "description": ""
+            "description": "atari"
         },
         {
             "id": 2,
