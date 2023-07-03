@@ -18,31 +18,34 @@
     <title>Walter´s AluraGeek</title>
 </head>
 <body>
-    <header>
-        <nav>    
-            <div class="container">
+    <header class="encabezado container">
+        <div class="encabezado__container">
                 <div class="logo__container">
                     <img class="logo__img" src="./assets/img/logo.png" alt="logo" />
-                    <p class="logo__descripcion1">Alura</p>
-                    <p class="logo__descripcion2">Geek</p>
+                    <input class="logo__texto" type="text" placeholder="¿Qué deseas búscar?" />
+                    <div class="logo__texto__lupa">
+                        <img src="assets/img/lupa.png" alt="lupa">
+                    </div>
                 </div>
-                <input class="logo__input" type="text" placeholder="¿Qué deseas búscar?" />
-                <div class="login">
-                    <a href="login.html">
-                        <button class="login__btn" type="submit">Login</button>
-                    </a>
+                <a href="login.html" class="login">
+                     <button class="login__btn" id="btnLogin" type="submit">Login</button>
+                </a>
+               
+                <div class="logo__texto__lupa-mobile">
+                    <img src="assets/img/lupa.png" alt="lupa">
                 </div>
+            </div> 
+        </div>
+     
+            <div class="banner__container">
+            <div class="banner__descripcion">
+                    <h2 class="banner__titulo">Febrero Promocional</h2>
+                    <p class="banner__texto">Productos seleccionados con 33% de descuento</p>
+                    <a href="#"><button class="banner__btn" type="button">Ver Consolas</button></a>
             </div>
-        </nav>   
+            </div>
     </header>
-    
-    <section class="banner">
-       <div class="banner__container">
-            <h1 class="banner__titulo">Febrero Promocional</h1>
-            <h4 class="banner__descripcion">Productos seleccionados con 33% de descuento</h4>
-            <button class="banner__btn">Ver Consolas</button>
-       </div>
-    </section>
+
     <section class="productos">
         <div class="productos__container">
             <div class="productos__titulo">
@@ -63,8 +66,6 @@
         <div class="contact__container">
             <div class="logo__container">
                 <img class="logo__img" src="./assets/img/logo.png" alt="logo" />
-                <p class="logo__descripcion1">Alura</p>
-                <p class="logo__descripcion2">Geek</p>
             </div>
         
             <div class="links-utiles">
