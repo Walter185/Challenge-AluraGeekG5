@@ -1,12 +1,14 @@
-.produtos__container {
-	margin: 3% 5% 0 5%;
-}
 
 .produtos {
 	display: flex;
 	flex-direction: column;
 	background: #E5E5E5;
 }
+
+.produtos__container {
+	margin: 3% 5% 0 5%;
+}
+
 
 .produtos__lista {
 	display: flex;
@@ -42,4 +44,35 @@
 .produtos__lista {
 	display: flex;
 	flex-direction: row;
+}
+
+@media screen and (min-width: 0) {
+	.produtos__container {
+		margin: 3%;
+	}
+
+	.produtos__container {
+		height: 60px;
+		margin-bottom: 2%;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.produtos__container {
+		height: 350px;
+	}
+
+	.productos__titulo {
+		padding: 0;
+		height: 20%;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.produtos__container {
+		height: 400px;
+	}
+
 }

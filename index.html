@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/banner.css">
     <link rel="stylesheet" href="assets/css/products.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet"/>
@@ -74,31 +73,40 @@
         </div>
     </section>
 </div>
-<footer>
-    <section class="contact">
-        <div class="contact__container">
-            <div class="logo__container">
-                <img class="logo__img" src="./assets/img/logo.png" alt="logo" />
-            </div>
-        
-            <div class="links-utiles">
-                <a href="">Quienes somos</a>
-                <a href="">Política de Privacidad</a>
-                <a href="">Programa de fidelidad</a>
-                <a href="">Nuestras Tiendas</a>
-                <a href="">Quiero ser franquiciado</a>
-                <a href="">Anuncie aquí</a>
-            </div>
+
+<!-------------------------------------->
+
+<footer class="pie">
+    <div class="pie__container">
+        <div class="pie__items">
+            <img class="pie__img" src="./assets/img/logo.png" alt="logo" />      
+            <nav class="pie__nav">
+                <ul class="pie__lista">
+                    <li class="pie__btn"><a class="pie__link" href="">Quienes somos</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Política de Privacidad</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Programa de fidelidad</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Nuestras Tiendas</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Quiero ser franquiciado</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Anuncie aquí</a></li>
+                </ul>            
+            </nav>
         </div>
     <form class="contact__form">
-        <p class="contact__form__descripcion">Hable con nosotros</p>
-        <input type="text" placeholder="Escriba su nombre" required />
-        <textarea placeholder="Escriba su mensaje" required></textarea>
-        <input type="submit" value="Enviar mensaje" class="contact__form__btn" data-submit />
+        <label class="contact__form__descripcion">Hable con nosotros</label>
+        <div class="form__input">
+            <div class="form__nombre__float">
+                <input class="form__nombre" type="text" placeholder="Nombre"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='Nombre'" id="formNombre" required />
+                <label class="label__nombre">Nombre</label>
+            </div>
+        <textarea class="form__mensaje" placeholder="Escriba su mensaje" id="formMensaje" required></textarea>
+        </div>
+        <button type="submit" value="Enviar mensaje" class="form__btn" id="formBtn">Enviar Mensaje</button>
     </form>
-    </section>
-    <div class="contact__me">
-        <p>Desarrollado por Walter Liendo 2023</p>
+</div>
+    <div class="pie__info">
+        <p class="pie__nombre">Desarrollado por Walter Liendo <br>2023</p>
     </div>
 </footer>
     
