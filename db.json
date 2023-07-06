@@ -1,5 +1,20 @@
 {
-    "producto": [
-       
-    ]
+  "producto": [
+    {
+      "imageUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wyUf?ver=3a29",
+      "category": "consola",
+      "name": "prueba ",
+      "price": "4",
+      "description": "ajsdlfjlsdafkj",
+      "id": 1
+    },
+    {
+      "imageUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wyUf?ver=3a29",
+      "category": "consola",
+      "name": "prueba ",
+      "price": "4",
+      "description": "ajsdlfjlsdafkj",
+      "id": 2
+    }
+  ]
 }

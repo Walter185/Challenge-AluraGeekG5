@@ -1,5 +1,5 @@
 // METHOD GET
-const AllProducts = () =>
+const allProducts = () =>
   fetch("http://localhost:3000/producto")
     .then((response) => response.json())
     .catch((error) => console.log(error));
@@ -63,7 +63,7 @@ const deleteProduct = async (id) => {
 };
 
 export const productServices = {
-  AllProducts,
+  allProducts,
   getOneProduct,
   addProduct,
   modifyProduct,

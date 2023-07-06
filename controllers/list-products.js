@@ -1,4 +1,4 @@
-import { AllProducts, productServices} from '../services/product-service.js';
+import { productServices} from '../services/product-service.js';
 
 const getProducts = (name, price, imageUrl, id) => {
     const card = document.createElement("div");
@@ -18,7 +18,7 @@ const getProducts = (name, price, imageUrl, id) => {
 
 const render = async () => {
     try {
-      const listProducts = await productServices.AllProducts();
+      const listProducts = await productServices.allProducts();
 
     listProducts.forEach((producto) => {
         producto.appenChild(
