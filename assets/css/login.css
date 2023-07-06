@@ -66,7 +66,12 @@
     font-weight: 500;
 
 }
-
+.error {
+    background-color: #FFCCCC;
+}
+.success {
+    background-color: #CCFFCC;
+}
 
 @media screen and (min-width: 0) {
     .encabezado__container {
