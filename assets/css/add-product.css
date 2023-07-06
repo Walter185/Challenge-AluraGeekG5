@@ -1,0 +1,51 @@
+main {
+    background: rgb(245, 245, 245);
+    padding: 16px;
+}
+
+.product-add__title {
+    display: flex;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.form__register {
+
+}
+
+.product-add__input__url,
+.product-add__input__name,
+.product-add__input__price,
+.product-add__input__category,
+.product-add__textarea__description,
+.product-add__btn { 
+    width: 40%;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 8px 12px 13px 12px;
+    border-radius: 4px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    border: solid rgb(207, 203, 203) 0.5px;
+}
+
+.product-add__textarea__description {
+    height: 81px;
+}
+
+.product-add__btn {
+    background: #2A7AE4;
+    color: #FFFFFF;
+    height: 45px;
+    width: 42%;
+    margin-bottom: 25px;
+}

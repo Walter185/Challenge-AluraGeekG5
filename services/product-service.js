@@ -11,17 +11,17 @@ const getOneProduct = (id) => {
 };
 
 //POST
-const addProduct = (name, imageUrl, price, category, description) => {
+const addProduct = (imageUrl, category, name, price, description) => {
   return fetch(`http://localhost:3000/producto`, {
     method: "post",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      name,
       imageUrl,
-      price,
       category,
+      name,
+      price,    
       description,
     }),
   }).then((response) => {
