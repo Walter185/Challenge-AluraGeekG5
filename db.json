@@ -2,10 +2,10 @@
   "producto": [
     {
       "imageUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHz?ver=b712",
-      "category": "categoria",
-      "name": "nombre",
-      "price": "precio",
-      "description": "descr",
+      "category": "undefined",
+      "name": "nombrefff",
+      "price": "undefined",
+      "description": "undefined",
       "id": 1
     }
   ]
