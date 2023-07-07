@@ -1,3 +1,8 @@
+.encabezado__container {
+    display: initial;
+    padding: 20px;
+    margin-left: 20px;
+}
 .login__container {
     display: flex;
 	flex-direction: column;

@@ -5,10 +5,23 @@ const getProducts = (name, price, imageUrl, id) => {
 
     const contenido = `
     <div class="producto">
-        <div class="container">
-        <img src="${imageUrl}" alt="img">
-        <h1 class="product-name"> ${name} </h1>
+        <div class="producto__container">
+            <button class="buttonDelete" type="button">
+              <img class="deleteImage" src="../assets/img/delete.png" alt="Borrar" />
+            </button>
+            
+            <a href="../screens/edit-product.html?id=${id}">
+            
+              <button class="buttonEdit" type="button">
+                <img class="editImage" src="../assets/img/edit.png" alt="Editar" />
+              </button>
+            
+            </a>
         </div>
+        
+        <img class="producto__img" src="${imageUrl}" alt="img">
+        <h1 class="producto__name"> ${name} </h1>
+        <p class="producto__price">${price}</p>
         </div>
     `;
   card.innerHTML = contenido;
@@ -16,12 +29,29 @@ const getProducts = (name, price, imageUrl, id) => {
   return card;
 };
 
+const productos = document.querySelector("[data-allProducts]");
+
+productos.addEventListener("click", async (evento) => {
+  let deleteButton = evento.target.className === "deleteImage";
+  if (deleteButton) {
+    const producto = evento.target.closest("[data-id]");
+    let id = producto.dataset.id;
+    productServices
+      .deleteProduct(id)
+      .then((res) => {
+        producto.remove();
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
+});
+
 const render = async () => {
     try {
-      const listProducts = await productServices.allProducts();
+      const listaProductos = await productServices.allProducts();
 
-    listProducts.forEach((producto) => {
-        producto.appenChild(
+    listaProductos.forEach((producto) => {
+        productos.appendChild(
             getProducts( 
                 producto.name,
                 producto.price,

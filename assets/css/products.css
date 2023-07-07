@@ -1,73 +1,108 @@
 
-.productos {
+.products {
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	background: #E5E5E5;
-}
+	margin: 0 auto;
+  }
 
-.productos__container {
-	margin: 3% 5% 0 5%;
-}
-
-
-.productos__lista {
-	display: flex;
-	flex-direction: row;
-}
-
-.productos__titulo {
+.products__title {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.categoria__titulo{
-	font-size: 30px;
-	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
-	color: #464646;
-}
-
-.categoria__btn {
+.product-btn {
+	height: 51px;
+	width: 180px;
+	color: #ffff;
 	border: none;
-	font-size: 20px;
-	background: #E5E5E5;
+	background-color: #2a7ae4;
+
 }
 
-.categoria__link {
-	text-decoration: none;
-	font-weight: bolder;
-	font-family: 'Raleway', sans-serif;
-	color: #2A7AE4;
+.products-section {
+	height: 100%;
+	  padding: 0px 150px 0px 150px;
+	  display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+	  gap: 10px;
+  }
+
+  .producto {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 32px;
+  } 
+
+  .producto__container {
+	position: relative;
+
+  }
+  
+  .producto__price {
+	color: #464646;
+	font-weight: bold;
+	font-size: 16px;
+  }
+
+  .producto__img {
+	width: 176px;
+	height: 174px;
+  }
+
+  .producto__container .editImage {
+	position: absolute;
+	top: 30px;
+	right: 15px;
+  }
+
+  .producto__container .deleteImage {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+  }
+
+  .editImage,
+.deleteImage {
+  width: 24px;
+  height: 24px;
+}
+
+.buttonDelete,
+.buttonEdit {
+  background-color: transparent;
+  border-color: transparent;
 }
 
 @media screen and (min-width: 0) {
-	.productos__container {
+	/* .producto__container {
 		margin: 3%;
 	}
 
-	.productos__container {
+	.producto__container {
 		height: 60px;
 		margin-bottom: 2%;
-	}
+	} */
 
 }
 
 @media screen and (min-width: 768px) {
-	.productos__container {
+	/* .producto__container {
 		height: 350px;
 	}
 
-	.productos__titulo {
+	.products__title {
 		padding: 0;
 		height: 20%;
 		margin-bottom: 0;
-	}
+	} */
 }
 
 @media screen and (min-width: 992px) {
-	.productos__container {
+	/* .producto__container {
 		height: 400px;
-	}
+	} */
 
 }
