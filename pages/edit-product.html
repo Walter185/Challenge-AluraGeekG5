@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/assets/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/add-product.css">
+    <title>AluraGeek | Administrador</title>
+</head>
+<body>
+    <header class="header container">
+    <div class="header__container__add">
+        <div class="logo__container">
+            <a href="/"><img class="logo__img" src="../assets/img/logo1.png" alt="logo" /></a>
+            <input class="logo__texto" type="text" placeholder="¿Qué deseas búscar?" />
+            <div class="logo__texto__lupa">
+                <img src="../assets/img/lupa.png" alt="lupa">
+             </div>
+         </div>
+         <div class="logo__texto__lupa-mobile">
+            <img src="../assets/img/lupa.png" alt="lupa">
+        </div>
+    </div>
+    </header>
+<!-------------------------------------->
+
+
+<!-------------------------------------->
+
+<footer class="pie">
+    <div class="pie__container">
+        <div class="pie__items">
+            <img class="pie__img" src="../assets/img/logo1.png" alt="logo" />      
+            <nav class="pie__nav">
+                <ul class="pie__lista">
+                    <li class="pie__btn"><a class="pie__link" href="">Quienes somos</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Política de Privacidad</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Programa de fidelidad</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Nuestras Tiendas</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Quiero ser franquiciado</a></li>
+                    <li class="pie__btn"><a class="pie__link" href="">Anuncie aquí</a></li>
+                </ul>            
+            </nav>
+        </div>
+    <form class="contact__form">
+        <label class="contact__form__descripcion">Hable con nosotros</label>
+        <div class="form__input">
+            <div class="form__nombre__float">
+                <input class="form__nombre" type="text" placeholder="Nombre"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='Nombre'" id="formNombre" required />
+                <label class="label__nombre">Nombre</label>
+            </div>
+        <textarea class="form__mensaje" placeholder="Escriba su mensaje" id="formMensaje" required></textarea>
+        </div>
+        <button type="submit" value="Enviar mensaje" class="form__btn" id="formBtn">Enviar Mensaje</button>
+    </form>
+</div>
+    <div class="pie__info">
+        <p class="pie__nombre">Desarrollado por Walter Liendo <br>2023</p>
+    </div>
+</footer>
+    <script src="../controllers/add-product.js" type="module"></script>
+</body>
+</html>
