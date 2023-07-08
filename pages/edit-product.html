@@ -46,13 +46,12 @@
         <section class="products-section" data-allProducts>
           <form action="#" class="form-control" data-form>
             <img class="products__img" src="" data-url />
-            <input
+            <!-- <input
               class="product-edit__input__url"
               type="text"
               placeholder="URL de imagen"
-              required
               data-url
-            />
+            /> -->
             <input
               class="product-edit__input__category"
               type="text"
@@ -60,25 +59,28 @@
               required
               data-categoria
             />
-
             <input
-              class="product-edit__input__name"
-              type="text"
-              placeholder="Nombre del producto"
-              data-nombre
-            />
+                class="product-edit__input__name"
+                type="text"
+                placeholder="Nombre del producto"
+                data-nombre
+              />
+
             <input
               class="product-edit__input__price"
               type="text"
               placeholder="Precio del producto"
               data-precio
             />
+        
+           
             <textarea
               class="product-edit__textarea__description"
               type="text"
               placeholder="Descripcion del producto"
               data-descripcion
             ></textarea>
+            
             <button type="submit" class="product-edit__btn">
               Actualizar producto
             </button>

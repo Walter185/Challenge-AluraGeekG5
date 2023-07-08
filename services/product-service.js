@@ -13,7 +13,7 @@ const getOneProduct = (id) => {
 //POST
 const addProduct = (imageUrl, category, name, price, description) => {
   return fetch(`http://localhost:3000/producto`, {
-    method: "post",
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
@@ -33,16 +33,16 @@ const addProduct = (imageUrl, category, name, price, description) => {
 };
 
 // PUT / PATCH
-const modifyProduct = async (id, name, price, category, description) => {
+const modifyProduct = async (id, category, name, price, description) => {
   return fetch(`http://localhost:3000/producto/${id}`, {
     method: "PATCH",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type" : "application/json",
     },
     body: JSON.stringify({
+      category,
       name,
       price,
-      category,
       description,
     }),
   })
