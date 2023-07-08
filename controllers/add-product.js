@@ -11,6 +11,7 @@ form.addEventListener("submit", (evento) => {
   const precio = document.querySelector("[data-precio]").value;
   const descripcion = document.querySelector("[data-descripcion]").value;
 
+
   productServices.addProduct(url, categoria, nombre, precio, descripcion)
   .then((response) => {
     window.location.href = "../index.html";

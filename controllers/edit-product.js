@@ -24,6 +24,13 @@ const formulario = document.querySelector("[data-form]");
 formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
 
+    const precioValido = /^\$?[0-9]+(\.[0-9]{2})?$/; // Expresión regular para validar el formato del precio en dólares
+
+    if (!precioValido.test(inputPrecio.value)) {
+        alert("Ingrese un precio válido en formato de moneda dólar (por ejemplo, $10.99).");
+        return;
+    }
+    
     productServices
     .modifyProduct(
         id,

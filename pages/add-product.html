@@ -62,7 +62,8 @@
           <input
             class="product-add__input__price"
             type="text"
-            placeholder="Precio del producto"
+            pattern="^\d+(\.\d{1,2})?$"
+            placeholder="Precio del producto (USD)"
             required
             data-precio
           />
