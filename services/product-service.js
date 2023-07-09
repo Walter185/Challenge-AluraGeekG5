@@ -10,11 +10,10 @@ const getOneProduct = (id) => {
   });
 };
 
-const getOneCategory = (category) => {
-  return fetch(`http://localhost:3000/producto/${category}`).then((response) => {
-    return response.json();
-  });
-};
+const getOneCategory = (category) =>
+  fetch(`http://localhost:3000/producto?category=${category}`)
+    .then((response) => response.json())
+    .catch((error) => console.log(error));
 
 //POST
 const addProduct = (imageUrl, category, name, price, description) => {

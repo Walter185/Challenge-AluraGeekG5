@@ -2,7 +2,7 @@
   "producto": [
     {
       "imageUrl": "https://www.clarin.com/img/2023/07/07/ZtXGJz699_600x290__1.jpg",
-      "category": "cat22",
+      "category": "Star Wars",
       "name": "nom2",
       "price": "precio",
       "description": "des2",
@@ -10,7 +10,7 @@
     },
     {
       "imageUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHl?ver=bb8e",
-      "category": "cat",
+      "category": "Diversos",
       "name": "nombre",
       "price": "1500",
       "description": "ñlasdkjflsf",
@@ -18,19 +18,11 @@
     },
     {
       "imageUrl": "https://www.clarin.com/img/2022/04/14/wh-SGKZUg_1256x620__1.jpg",
-      "category": "cat",
+      "category": "Diversos",
       "name": "nomre",
       "price": "10.22",
       "description": "ladjflkadf",
       "id": 4
-    },
-    {
-      "imageUrl": "sss",
-      "category": "s",
-      "name": "s",
-      "price": "10",
-      "description": "s",
-      "id": 5
     },
     {
       "imageUrl": "#",
