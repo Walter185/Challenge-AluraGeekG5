@@ -37,20 +37,23 @@
     <section class="product-add">
         <div class="product-add__title">Agregar nuevo Producto</div>
         <form class="form-register" data-form>
-            <input
+          <input
             class="product-add__input__url"
             type="text"
             placeholder="URL de imagen"
             required
             data-url
           />
-          <input
-          class="product-add__input__category"
+          <select name="categoria" id="categoria"   
           type="text"
-          placeholder="Categoria"
           required
           data-categoria
-        />
+          class="product-add__input__category__options">
+            <option value="Star Wars">Star Wars</option>
+            <option value="Consolas">Consolas</option>
+            <option value="Diversos">Diversos</option>
+          </select>
+     
           <input
             class="product-add__input__name"
             type="text"
@@ -85,6 +88,5 @@
 
     <footer class="pie" id="idFooter"></footer>
     <script src="../controllers/add-product.js" type="module"></script>
-    <script src="../controllers/index.js" type="module"></script>
 </body>
 </html>

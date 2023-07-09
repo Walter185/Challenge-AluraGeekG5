@@ -10,6 +10,12 @@ const getOneProduct = (id) => {
   });
 };
 
+const getOneCategory = (category) => {
+  return fetch(`http://localhost:3000/producto/${category}`).then((response) => {
+    return response.json();
+  });
+};
+
 //POST
 const addProduct = (imageUrl, category, name, price, description) => {
   return fetch(`http://localhost:3000/producto`, {
@@ -65,6 +71,7 @@ const deleteProduct = async (id) => {
 export const productServices = {
   allProducts,
   getOneProduct,
+  getOneCategory,
   addProduct,
   modifyProduct,
   deleteProduct,

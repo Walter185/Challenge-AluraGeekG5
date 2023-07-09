@@ -17,34 +17,7 @@
     <title>AluraGeek | Home</title>
 </head>
 <body>
-    <header class="header container">
-        <div class="header__container">
-            <div class="logo__container">
-                <a href="/index.html"><img class="logo__img" src="./assets/img/logo1.png" alt="logo" /></a>
-                <input class="logo__texto" type="text" id="searchInput" placeholder="¿Qué deseas búscar?" />
-                <div class="logo__texto__lupa">
-                    <img src="assets/img/lupa.png" alt="lupa">
-                </div>
-            </div>
-            <a href="./pages/login.html" class="login">
-                    <button class="login__btn" id="btnLogin" type="submit">Login</button>
-            </a>
-            
-            <div class="logo__texto__lupa-mobile">
-                <img src="assets/img/lupa.png" alt="lupa">
-            </div>
-        </div> 
-     
-            <div class="banner__container">
-                <div class="banner__descripcion">
-                        <h2 class="banner__titulo">Febrero Promocional</h2>
-                        <p class="banner__texto">Productos seleccionados con 33% de descuento</p>
-                        <a href="#"><button class="banner__btn" type="button">Ver Consolas</button></a>
-                </div>
-            </div>
-    </header>
-
-<!-------------------------------------->
+    <header class="header container" id="idHeader"></header>
 
     <section class="general">
         <div class="products__container">
@@ -58,28 +31,31 @@
         </div>
         <section class="productos" data-product>
         </section>
-    </section>
-    <!-- <section class="productos">
-        <div class="productos__container">
-            <div class="productos__titulo">
+        <div class="products__container">
+            <!-- <ul id="searchResults"></ul> -->
+            <div class="products__title">
                 <h2 class="categoria__titulo">Consolas</h2>
-                <button class="categoria__btn"><a href="#" class="categoria__link" id="link">Ver todo &#8594;</a></button>
             </div>
-            
+            <div class="verTodo">
+               Ver todo <img src="./assets/img/Vector.png" alt="ver todo" class="vector">
+            </div>      
         </div>
-    </section>
-    <section class="productos" data-product>
-        <div class="productos__container">
-            <div class="productos__titulo">
+        <section class="productos" data-product>
+        </section>
+        <div class="products__container">
+            <!-- <ul id="searchResults"></ul> -->
+            <div class="products__title">
                 <h2 class="categoria__titulo">Diversos</h2>
-                <button class="categoria__btn"><a href="#" class="categoria__link" id="link">Ver todo &#8594;</a></button>
             </div>
-            
+            <div class="verTodo">
+               Ver todo <img src="./assets/img/Vector.png" alt="ver todo" class="vector">
+            </div>      
         </div>
-    </section> -->
-
-<!-------------------------------------->
-
+        <section class="productos" data-product>
+        </section>
+    </section>
+     
+     
 <footer class="pie" id="idFooter"></footer>
 <script src="./controllers/products.js" type="module"></script>;
 <script src="./controllers/search.js" type="module"></script>;

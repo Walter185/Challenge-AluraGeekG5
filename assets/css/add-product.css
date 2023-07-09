@@ -16,6 +16,7 @@ main {
 .product-add__input__name,
 .product-add__input__price,
 .product-add__input__category,
+.product-add__input__category__options,
 .product-add__textarea__description,
 .product-add__btn { 
     width: 40%;
@@ -36,6 +37,11 @@ main {
 
 .product-add__textarea__description {
     height: 81px;
+}
+
+.product-add__input__category__options {
+    height: 50px;
+    width: 42%;
 }
 
 .product-add__btn {
