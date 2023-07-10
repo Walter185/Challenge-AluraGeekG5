@@ -38,13 +38,14 @@ const addProduct = (imageUrl, category, name, price, description) => {
 };
 
 // PUT / PATCH
-const modifyProduct = async (id, category, name, price, description) => {
+const modifyProduct = async (id, imageUrl, category, name, price, description) => {
   return fetch(`http://localhost:3000/producto/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type" : "application/json",
     },
     body: JSON.stringify({
+      imageUrl,
       category,
       name,
       price,

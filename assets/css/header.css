@@ -53,6 +53,7 @@
 
 @media screen and (min-width: 0) {
   .header__container, 
+  .header__container__add,
   .header__container__login {
     justify-content: space-between;
     padding: 20px;

@@ -3,7 +3,7 @@
     padding: 20px;
     margin-left: 20px;
 }
-.login__container {
+.login__container, .register__container {
     display: flex;
 	flex-direction: column;
 	height: 480px;
@@ -13,7 +13,7 @@
 }
 
 
-.login__form {
+.login__form, .register__form {
     align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -88,7 +88,7 @@
 		height: 360px;
 	}
 
-    .login__form {
+    .login__form, .register__form {
         height: 200px;
 
     }
@@ -128,6 +128,10 @@
     .login__form {
         height: 300px;
 
+    }
+
+    .register__form {
+        height: 350px;
     }
 
 	.input__login {

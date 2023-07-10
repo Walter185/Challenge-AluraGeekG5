@@ -58,24 +58,32 @@ cad=`
 document.getElementById("idFooter").innerHTML=cad;
 
 
-
-document.getElementById('login__form').addEventListener('submit', function(event) {
+document.getElementById('register__form').addEventListener('submit', function(event) {
   event.preventDefault();
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
+  const name = document.getElementById('registerName').value;
+  const email = document.getElementById('registerEmail').value;
+  const password = document.getElementById('registerPassword').value;
 
-  // Lógica de inicio de sesión
-  if (validateEmail(email) && validatePassword(password)) {
-    login(email, password);
+  // Lógica de registro
+  if (validateName(name) && validateEmail(email) && validatePassword(password)) {
+    register(name, email, password);
   } else {
-    if (validateEmail(email) && !validatePassword(password)) {
-    showError('El password debe contener al menos 5 caracters');
+    if (validateName(name) && validateEmail(email) && !validatePassword(password)) {
+    showError('El password debe contener al menos 5 caracteres');
+  } else {
+    if (validateName(name) && !validateEmail(email) && validatePassword(password)) {
+    showError('EL mail no contiene un formato correcto . Ej: email@email.com');
     } else {
-        showError('EL mail no contiene un formato correcto . Ej: email@email.com');
+    if (!validateName(name) && validateEmail(email) && validatePassword(password)) {
+    showError('El campo NOMBRE no puede quedar vacio');
     }
+    }}
   }
 });
 
+function validateName(name) {
+  return name.trim().length > 5;
+}
 
 function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -86,24 +94,20 @@ function validatePassword(password) {
   return password.length >= 5;
 }
 
-function login(email, password) {
-  getUsers()
-    .then(users => {
-      const user = users.find(user => user.email === email && user.password === password);
-      if (user) {
-        showSuccess('Inicio de sesión exitoso');
-        window.location.href="product.html";
 
-      } else {
-        showError('Credenciales inválidas');
-      }
+function register(name, email, password) {
+  const user = { name, email, password };
+  createUser(user)
+    .then(() => {
+      showSuccess('Registro exitoso');
+      window.location.href="product.html";
+
     })
     .catch(error => {
-      showError('Error al realizar el inicio de sesión');
+      showError('Error al realizar el registro');
       console.error(error);
     });
 }
-
 
 function showError(message) {
   const messageElement = document.getElementById('message');

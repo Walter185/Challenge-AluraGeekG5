@@ -37,16 +37,16 @@ document.getElementById("idFooter").innerHTML=cad;
 
 const getURL = new URL(window.location);
 const id = getURL.searchParams.get("id");
-
-
 const inputUrl = document.querySelector("[data-url]");
 const inputCategoria = document.querySelector("[data-categoria]");
+const inputImg = document.querySelector("[data-img]");
 const inputNombre = document.querySelector("[data-nombre]");
 const inputPrecio = document.querySelector("[data-precio]");
 const inputDescripcion = document.querySelector("[data-descripcion]");
 
 productServices.getOneProduct(id).then((datos) => {
-    inputUrl.setAttribute("src", datos.imageUrl);
+    // inputUrl.setAttribute("src", datos.imageUrl);
+    inputUrl.value = datos.imageUrl;
     inputCategoria.value = datos.category;
     inputNombre.value = datos.name;
     inputPrecio.value = datos.price;
@@ -69,6 +69,7 @@ formulario.addEventListener("submit", (evento) => {
     productServices
     .modifyProduct(
         id,
+        inputUrl.value,
         inputCategoria.value,
         inputNombre.value,
         inputPrecio.value,

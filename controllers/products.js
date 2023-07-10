@@ -4,10 +4,13 @@ const nuevoProducto = (name, price, imageUrl, id) => {
   const card = document.createElement("div");
   const contenido = `
         <div class="producto">
+          <a class="ver-producto" href="../produto.html?id=${id}">
             <img class="producto__img" src="${imageUrl}" alt="img">
-            <h1 class="product-name"> ${name} </h1>
-            <p class="precio">USD ${(price)}</p>
-            <a class="ver-producto" href="../produto.html?id=${id}">Ver Producto</a>
+          </a>
+          <h1 class="producto__name"> ${name} </h1>
+          <p class="producto__price">USD ${(price)}</p>
+          <a class="producto__ver" href="../produto.html?id=${id}">
+          Ver Producto</a>
         </div>   
     `;
   card.innerHTML = contenido;
@@ -20,16 +23,14 @@ const productos = document.querySelector("[data-product]");
 
 const render = async () => {
   try {
-    // const listaProductos = await productServices.allProducts();
-    // const categoriaDeseada = "cat"; // Reemplaza "cat" con la categoría que deseas mostrar
-    const listaProductos = await productServices.allProducts();
+  const listaProductos = await productServices.allProducts();
     listaProductos.forEach((elemento) => {
       productos.appendChild(
         nuevoProducto(
           elemento.name,
           elemento.price,
           elemento.imageUrl,
-          elemento.id
+          elemento.id,
         )
       );
     });
@@ -44,9 +45,7 @@ const starwars = document.querySelector("[data-starwars]");
 
 const renderS = async () => {
   try {
-    // const listaProductos = await productServices.allProducts();
-    // const categoriaDeseada = "cat"; // Reemplaza "cat" con la categoría que deseas mostrar
-    const listaProductos = await productServices.getOneCategory("Star Wars");
+  const listaProductos = await productServices.getOneCategory("Star Wars");
     listaProductos.forEach((elemento) => {
       starwars.appendChild(
         nuevoProducto(
@@ -68,9 +67,7 @@ const consolas = document.querySelector("[data-consolas]");
 
 const renderC = async () => {
   try {
-    // const listaProductos = await productServices.allProducts();
-    // const categoriaDeseada = "cat"; // Reemplaza "cat" con la categoría que deseas mostrar
-    const listaProductos = await productServices.getOneCategory("Consolas");
+   const listaProductos = await productServices.getOneCategory("Consolas");
     listaProductos.forEach((elemento) => {
       consolas.appendChild(
         nuevoProducto(
@@ -92,9 +89,7 @@ const diversos = document.querySelector("[data-diversos]");
 
 const renderD = async () => {
   try {
-    // const listaProductos = await productServices.allProducts();
-    // const categoriaDeseada = "cat"; // Reemplaza "cat" con la categoría que deseas mostrar
-    const listaProductos = await productServices.getOneCategory("Diversos");
+   const listaProductos = await productServices.getOneCategory("Diversos");
     listaProductos.forEach((elemento) => {
       diversos.appendChild(
         nuevoProducto(

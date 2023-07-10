@@ -7,22 +7,19 @@
 }
 
 .products__container {
-	padding: 20px 110px 0px 120px;
+	padding: 20px 20px 0px 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
   }
 
 .products__container .products__title {
-	font-size: 32px;
-	font-weight: bold;
 	padding: 30px;
-	color: #464646;
 }
 
 .verTodo {
 	color: #2a7ae4;
-	font-weight: bold;
+	font-weight: 800;
     margin-top: 25px;
     display: flex;
     padding: 30px;
@@ -34,6 +31,8 @@
 
 .products__title {
 	display: flex;
+	font-weight: bold;
+	color: #464646;
 	justify-content: space-between;
 	align-items: center;
 	font-family: 'Raleway', sans-serif;
@@ -41,22 +40,35 @@
 }
 
 .producto {
+	background-color: #ffff;
+	box-shadow: 0px 1px 5px 0px rgba(28, 29, 4, 0.5);
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 32px;
+	flex-shrink: 0;
+	justify-content: space-between; 
+	padding: 10px;
+	row-gap: 12px;
+	transition: 0.3s;
+	width: calc((100% / 6) - (var(--gap) - (var(--gap) / 6)));
+	overflow: hidden;
 } 
 
+.producto:hover {
+	transform: scale(1.03);
+
+}
 .producto__img {
-	width: 176px;
-	height: 174px;
+	cursor: pointer;  
+	max-height: 300px;
+	width: 100%;
   }
 .product-btn {
 	height: 45px;
 	width: 180px;
-	color: #ffff;
+	color: #f5f5f5;
 	border: none;
 	background-color: #2a7ae4;
-
+	margin-bottom: 15px;
 }
 
 .products-section {
@@ -67,11 +79,15 @@
 	  gap: 10px;
   }
 
-
+.producto__name {
+	  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
 
   .producto__container {
 	position: relative;
-
+	margin-top: -25px;
   }
   
   .producto__price {
@@ -80,6 +96,10 @@
 	font-size: 16px;
   }
 
+  .producto__ver {
+	text-decoration: none;
+	font-weight: bold;
+  }
   .producto__container .editImage {
 	position: absolute;
 	top: 30px;
@@ -107,10 +127,10 @@
 @media screen and (min-width: 0) {
 	.products__title{
 		display: flex;
+		font-weight: bold;
+		font-size: 20px;
 		flex-direction: column;
-		font-weight: 800;
 		align-items: baseline;
-		margin-top: 20px;
 	}
 	.products {
 		height: 100%;
@@ -122,11 +142,18 @@
 	.product-btn {
 		margin-top: 20px;
 	}
+
+	.producto__img {
+        width: 160px;
+        height: 160px;
+    }
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 768px) {
 	.products__title {
 		display: flex;
+		font-weight: 600;
+		font-size: 20px;
 		flex-direction: row;
 		align-items: baseline;
 	}
@@ -141,6 +168,7 @@
 @media screen and (min-width: 992px) {
 	.products__title {
 		display: flex;
+		font-size: 32px;
 		flex-direction: row;
 	}
 	.productos {

@@ -51,3 +51,40 @@ main {
     width: 42%;
     margin-bottom: 25px;
 }
+
+@media screen and (min-width: 0) {
+    .product-add__input__category,
+    .product-add__input__category__options,
+    .product-add__input__name,
+    .product-add__input__price,
+    .product-add__btn,
+    .product-add__textarea__description,
+    .product-add__input__url {
+        width: -webkit-fill-available;
+    }    
+}
+
+@media screen and (min-width: 992px) {
+    .product-add__input__category,
+    .product-add__input__category__options,
+    .product-add__input__name,
+    .product-add__input__price,
+    .product-add__textarea__description,
+    .product-add__input__url {
+    width: 559px;
+    height: 45px;
+    }
+
+    .product-add__textarea__description {
+    height: 81px;
+    }
+
+    .product-add__input__category__options {
+        width: 585px;
+        height: 55px;
+    }
+
+    .product-add__btn {
+        width: 585px;
+    }
+}

@@ -44,7 +44,7 @@ main {
   .product-edit__input__url,
   .product-edit__input__name,
   .product-edit__input__price,
-  .product-edit__input__category,
+  .product-edit__input__category__options,
   .product-edit__textarea__description,
   .product-edit__btn { 
       width: 40%;
@@ -63,6 +63,11 @@ main {
       border: solid rgb(207, 203, 203) 0.5px;
   }
 
+  .product-edit__input__category__options {
+    height: 50px;
+    width: 42%;
+  }
+  
   .product-edit__btn {
     background: #2A7AE4;
     color: #FFFFFF;
