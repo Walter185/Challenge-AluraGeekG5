@@ -1,3 +1,5 @@
+import { sessionContext, getSessionContext } from "../services/context.js";
+
 let cad = `
 <div class="header__container">
 <div class="logo__container">
@@ -61,3 +63,10 @@ cad=`
 </div>
 `
 document.getElementById("idFooter").innerHTML=cad;
+
+function bot () { 
+const boton = document.getElementById("btnLogin");
+if (sessionContext.isLoggedIn) {
+    boton.textContent = "HOLA";
+}};
+bot();

@@ -1,9 +1,9 @@
 export function getUsers() {
-    return fetch('http://localhost:3000/users').then(response => response.json());
+    return fetch('https://64af610dc85640541d4e50bf.mockapi.io/users').then(response => response.json());
   }
   
   export function createUser(user) {
-    return fetch('http://localhost:3000/users', {
+    return fetch('https://64af610dc85640541d4e50bf.mockapi.io/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

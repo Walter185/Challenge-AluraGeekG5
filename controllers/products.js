@@ -1,4 +1,5 @@
 import { productServices } from "../services/product-service.js";
+import { getSessionContext, updateSessionContext} from "../services/context.js";
 
 const nuevoProducto = (name, price, imageUrl, id) => {
   const card = document.createElement("div");
@@ -106,3 +107,11 @@ const renderD = async () => {
 };
 
 renderD();
+
+
+export function logout() {
+  document.getElementById('logoutBtn').addEventListener('click', function() {
+    updateSessionContext(false, '');
+  });
+};
+getSessionContext;

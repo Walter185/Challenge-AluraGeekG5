@@ -1,4 +1,4 @@
-import { getUsers, createUser} from '../services/login-service.js';
+import { createUser} from '../services/login-service.js';
 
 let cad = `
 <div class="header__container__add">
@@ -100,7 +100,7 @@ function register(name, email, password) {
   createUser(user)
     .then(() => {
       showSuccess('Registro exitoso');
-      window.location.href="product.html";
+      window.location.href="login.html";
 
     })
     .catch(error => {

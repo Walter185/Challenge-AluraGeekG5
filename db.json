@@ -71,6 +71,12 @@
       "email": "fito@fito.com",
       "password": "fitofito",
       "id": 12
+    },
+    {
+      "name": "liendo",
+      "email": "liendo@liendo.com",
+      "password": "liendo",
+      "id": 13
     }
   ],
   "producto": [

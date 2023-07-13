@@ -1,4 +1,5 @@
-import { getUsers, createUser} from '../services/login-service.js';
+import { getUsers} from '../services/login-service.js';
+import { getSessionContext, updateSessionContext } from '../services/context.js';
 
 let cad = `
 <div class="header__container__add">
@@ -91,12 +92,12 @@ function login(email, password) {
     .then(users => {
       const user = users.find(user => user.email === email && user.password === password);
       if (user) {
+        updateSessionContext(true, user);
         showSuccess('Inicio de sesión exitoso');
         window.location.href="product.html";
-
       } else {
         showError('Credenciales inválidas');
-      }
+        }
     })
     .catch(error => {
       showError('Error al realizar el inicio de sesión');
@@ -104,6 +105,11 @@ function login(email, password) {
     });
 }
 
+export function logout() {
+  document.getElementById('logoutBtn').addEventListener('click', function() {
+    updateSessionContext(false, '');
+  });
+}
 
 function showError(message) {
   const messageElement = document.getElementById('message');
@@ -117,5 +123,4 @@ function showSuccess(message) {
   messageElement.style.color = 'green';
 }
 
-
-
+getSessionContext();
