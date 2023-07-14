@@ -81,19 +81,19 @@
   ],
   "producto": [
     {
-      "imageUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wHgp?ver=1605",
-      "category": "Star Wars",
-      "name": "Star Wars",
-      "price": "10",
-      "description": "pruebafinal",
+      "imageUrl": "https://alurageek.s3.sa-east-1.amazonaws.com/atari.png",
+      "category": "Diversos",
+      "name": "Atari",
+      "price": "1000",
+      "description": "atari        ",
       "id": 1
     },
     {
-      "imageUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHl?ver=bb8e",
-      "category": "Star Wars",
-      "name": "modificado",
-      "price": "1500",
-      "description": "modificado",
+      "imageUrl": "https://alurageek.s3.sa-east-1.amazonaws.com/play5.png",
+      "category": "Consolas",
+      "name": "PlayStation 555",
+      "price": "1000",
+      "description": "play        ",
       "id": 2
     },
     {
@@ -105,11 +105,11 @@
       "id": 4
     },
     {
-      "imageUrl": "https://www.clarin.com/img/2022/04/14/wh-SGKZUg_1256x620__1.jpg",
-      "category": "Consolas",
-      "name": "consola",
-      "price": "23",
-      "description": "consola",
+      "imageUrl": "undefined",
+      "category": "Star Wars",
+      "name": "undefined",
+      "price": "5",
+      "description": "undefined",
       "id": 6
     },
     {

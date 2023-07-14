@@ -109,9 +109,9 @@ const renderD = async () => {
 renderD();
 
 
-export function logout() {
-  document.getElementById('logoutBtn').addEventListener('click', function() {
-    updateSessionContext(false, '');
-  });
-};
+// export function logout() {
+//   document.getElementById('logoutBtn').addEventListener('click', function() {
+//     updateSessionContext(false, '');
+//   });
+// };
 getSessionContext;
