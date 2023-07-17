@@ -29,7 +29,11 @@
          <div class="logo__texto__lupa-mobile">
             <img src="../assets/img/lupa.png" alt="lupa">
         </div>
+        <div>
+          <button type="submit" class="admin__btn">Menú Administrador</button>
+        </div>
     </div>
+    
     </header>
 <!-------------------------------------->
 
@@ -37,6 +41,7 @@
     <section class="product-add">
         <div class="product-add__title">Agregar nuevo Producto</div>
         <form class="form-register" data-form>
+          
           <input
             class="product-add__input__url"
             type="text"
@@ -70,14 +75,14 @@
             required
             data-precio
           />
-          <textarea
+          <input
           class="product-add__textarea__description"
           type="text"
           placeholder="Descripción del producto"
           required
           data-descripcion
         >
-        </textarea>
+        
         <button type="submit" class="product-add__btn">
             Agregar producto
           </button>  

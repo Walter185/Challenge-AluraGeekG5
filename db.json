@@ -1,82 +1,11 @@
 {
   "users": [
-    {
-      "name": "walter",
-      "email": "fito@fito.com",
-      "password": "fitofito",
-      "id": 1
-    },
-    {
-      "name": "SERGIO",
-      "email": "fito@fito.com",
-      "password": "fitofito",
-      "id": 2
-    },
-    {
-      "name": "producto",
-      "email": "wliendo@wliendo.com",
-      "password": "producto",
-      "id": 3
-    },
-    {
-      "name": "s",
-      "email": "fito@fito.com",
-      "password": "rodolfo",
-      "id": 4
-    },
-    {
-      "name": "s",
-      "email": "fito@fito.com",
-      "password": "fitofito",
-      "id": 5
-    },
-    {
-      "name": "c",
-      "email": "fito@fito.com",
-      "password": "fitofito",
-      "id": 6
-    },
-    {
-      "name": "c",
-      "email": "fito@fito.com",
-      "password": "fitofito",
-      "id": 7
-    },
-    {
-      "name": "waltercito",
-      "email": "fito@fito.com",
-      "password": "waltercito",
-      "id": 8
-    },
-    {
-      "name": "waltercito",
-      "email": "fito@fito.com",
-      "password": "fitofito",
-      "id": 9
-    },
-    {
-      "name": "waltercito",
-      "email": "fito@fito.com",
-      "password": "fitofito",
-      "id": 10
-    },
+    
     {
       "name": "waltercito",
       "email": "walter.liendo@gmail.com",
       "password": "waltercito",
       "id": 11
-    },
-    {
-      "name": "producto",
-      "email": "fito@fito.com",
-      "password": "fitofito",
-      "id": 12
-    },
-    {
-      "name": "liendo",
-      "email": "liendo@liendo.com",
-      "password": "liendo",
-      "id": 13
     }
   ],
   "producto": [

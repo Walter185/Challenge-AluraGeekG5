@@ -93,6 +93,7 @@
   display: flex;
   padding: 20px;
 }
+
   .logo__container {
     align-items: center;
     width: 60%;
@@ -127,7 +128,13 @@
   margin-left: 150px;
   padding: 20px;
 }
-
+.header__container__add {
+  justify-content: space-between;
+}
+.header__container__add button {
+  margin-right: 100px;
+  margin-top: 5px;
+}
 .logo__img {
   width: 180px;
 }

@@ -50,7 +50,9 @@ main {
     height: 45px;
     width: 42%;
     margin-bottom: 25px;
+    cursor: pointer;
 }
+
 
 @media screen and (min-width: 0) {
     .product-add__input__category,
@@ -61,7 +63,48 @@ main {
     .product-add__textarea__description,
     .product-add__input__url {
         width: -webkit-fill-available;
+    }
+        .admin__btn {
+            margin-left: -200px;
+            width: 150px;
+            height: 35px;
+            position: absolute;
+        }
+
+        .logo__texto__lupa-mobile {
+            margin-left: 320px;
+            position: absolute;
+            margin-top: 5px;
+        }
+
+        .admin__btn {
+            background: #ffff;
+            border-color: #2A7AE4;
+            font-family: 'Raleway', sans-serif;
+            color: #2A7AE4;
+            font-weight: 600;
+            width: 150px;
+            height: 40px;
+            border-style: solid; 
+            cursor: pointer;
+            margin-left: -200px;
+            margin-top: -5px;
+            }
     }    
+
+@media screen and (min-width: 768px) {
+    .admin__btn {
+        background: #ffff;
+        border-color: #2A7AE4;
+        font-family: 'Raleway', sans-serif;
+        color: #2A7AE4;
+        font-weight: 600;
+        width: 150px;
+        height: 40px;
+        border-style: solid; 
+        cursor: pointer;
+        margin-left: 120px;
+        }
 }
 
 @media screen and (min-width: 992px) {
@@ -73,6 +116,7 @@ main {
     .product-add__input__url {
     width: 559px;
     height: 45px;
+
     }
 
     .product-add__textarea__description {
@@ -86,5 +130,22 @@ main {
 
     .product-add__btn {
         width: 585px;
+    }
+
+    .product-add__title {
+        font-weight: 700;
+    }
+
+    
+.admin__btn {
+    background: #ffff;
+    border-color: #2A7AE4;
+    font-family: 'Raleway', sans-serif;
+    color: #2A7AE4;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: -300px;
     }
 }
