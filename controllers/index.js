@@ -22,7 +22,7 @@ let cad = `
     <div class="banner__descripcion">
             <h2 class="banner__titulo">Febrero Promocional</h2>
             <p class="banner__texto">Productos seleccionados con 33% de descuento</p>
-            <a href="#"><button class="banner__btn" type="button">Ver Consolas</button></a>
+            <a href="./pages/allconsolas.html"><button class="banner__btn" type="button">Ver Consolas</button></a>
     </div>
 </div>
 `
