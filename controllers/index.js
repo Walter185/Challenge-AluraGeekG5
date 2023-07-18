@@ -25,11 +25,10 @@ let cad = `
             <a href="./pages/allconsolas.html"><button class="banner__btn" type="button">Ver Consolas</button></a>
     </div>
 </div>
-`
-document.getElementById("idHeader").innerHTML=cad;
+`;
+document.getElementById("idHeader").innerHTML = cad;
 
-
-cad=`
+cad = `
 <div class="pie__container">
 <div class="pie__items">
   <img class="pie__img" src="../assets/img/logo1.png" alt="logo" />      
@@ -61,12 +60,13 @@ cad=`
 <div class="pie__info">
   <p class="pie__nombre">Desarrollado por Walter Liendo <br>  2023 </p>
 </div>
-`
-document.getElementById("idFooter").innerHTML=cad;
+`;
+document.getElementById("idFooter").innerHTML = cad;
 
-function bot () { 
-const boton = document.getElementById("btnLogin");
-if (sessionContext.isLoggedIn) {
+function bot() {
+  const boton = document.getElementById("btnLogin");
+  if (sessionContext.isLoggedIn) {
     boton.textContent = "HOLA";
-}};
+  }
+}
 bot();

@@ -1,83 +1,78 @@
 .banner__container {
-	display: flex;
-	align-items: flex-end;
-	position: relative;
-	height: 352px;
-	background: url(../img/banner-image.png) no-repeat center / cover;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  height: 352px;
+  background: url(../img/banner-image.png) no-repeat center / cover;
 }
 
 .banner__descripcion {
-	font-family: 'Raleway', sans-serif;
-	display: flex;
-	flex-direction: column;
-	font-weight: 700;
-	position: absolute;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  position: absolute;
 }
 
-
 .banner__btn {
-    background-color: #2a7ae4;
-	border: none;
-	color: #ffff;
-	width: 120px;
-	cursor: pointer;
-	height: 40px;
-	font-weight: 300;
-	font-family: 'Raleway', sans-serif;
+  background-color: #2a7ae4;
+  border: none;
+  color: #ffff;
+  width: 120px;
+  cursor: pointer;
+  height: 40px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
 }
 
 .banner__btn:hover {
-	background-color: #ffff;
-	color: #2a7ae4;
+  background-color: #ffff;
+  color: #2a7ae4;
 }
 
-.banner__titulo, .banner__texto {
-	margin-bottom: 20px;
-	color: #ffff;
+.banner__titulo,
+.banner__texto {
+  margin-bottom: 20px;
+  color: #ffff;
 }
 /********************/
 
 @media screen and (min-width: 0) {
+  .banner__descripcion {
+    padding: 25px;
+  }
 
-	.banner__descripcion {
-		padding: 25px;
-	}
+  .banner__titulo {
+    font-size: 25px;
+    font-weight: 600;
+  }
 
-	.banner__titulo {
-		font-size: 25px;
-		font-weight: 600;
-	}
-
-	.banner__texto {
-		font-size: 15px;
-		font-weight: 500;
-	}
+  .banner__texto {
+    font-size: 15px;
+    font-weight: 500;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .banner__descripcion {
+    padding: 30px 50px;
+  }
 
-	.banner__descripcion {
-		padding: 30px 50px;
-	  }
-	
-	  .banner__titulo {
-		font-size: 50px;
-	  }
-	
-	  .banner__texto {
-			font-size: 22px;
-	  }
+  .banner__titulo {
+    font-size: 50px;
+  }
+
+  .banner__texto {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .banner__descripcion {
+    padding: 50px 150px;
+  }
 
-	.banner__descripcion {
-		padding: 50px 150px;
-
-	}
-
-	.banner__titulo {
-		font-size: 60px;
-
-	}
+  .banner__titulo {
+    font-size: 60px;
+  }
 }

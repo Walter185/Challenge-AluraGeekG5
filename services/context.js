@@ -1,6 +1,6 @@
 export const sessionContext = {
   isLoggedIn: false,
-  user: ''
+  user: "",
 };
 
 // Función para actualizar el estado del contexto
@@ -13,7 +13,8 @@ export function updateSessionContext(isLoggedIn, user) {
 export function getSessionContext() {
   return sessionContext;
 }
-export function logout() { 
-document.getElementById('logoutBtn').addEventListener('click', function() {
-  updateSessionContext(false, '');});
+export function logout() {
+  document.getElementById("logoutBtn").addEventListener("click", function () {
+    updateSessionContext(false, "");
+  });
 }

@@ -1,4 +1,4 @@
-import { createUser} from '../services/login-service.js';
+import { createUser } from "../services/login-service.js";
 
 let cad = `
 <div class="header__container__add">
@@ -19,10 +19,10 @@ let cad = `
   <img src="../assets/img/lupa.png" alt="lupa" />
 </div>
 </div>
-`
-document.getElementById("idHeader").innerHTML=cad;
+`;
+document.getElementById("idHeader").innerHTML = cad;
 
-cad=`
+cad = `
 <div class="pie__container">
 <div class="pie__items">
   <img class="pie__img" src="../assets/img/logo1.png" alt="logo" />      
@@ -54,32 +54,52 @@ cad=`
 <div class="pie__info">
   <p class="pie__nombre">Desarrollado por Walter Liendo <br>  2023 </p>
 </div>
-`
-document.getElementById("idFooter").innerHTML=cad;
+`;
+document.getElementById("idFooter").innerHTML = cad;
 
+document
+  .getElementById("register__form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const name = document.getElementById("registerName").value;
+    const email = document.getElementById("registerEmail").value;
+    const password = document.getElementById("registerPassword").value;
 
-document.getElementById('register__form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const name = document.getElementById('registerName').value;
-  const email = document.getElementById('registerEmail').value;
-  const password = document.getElementById('registerPassword').value;
-
-  // Lógica de registro
-  if (validateName(name) && validateEmail(email) && validatePassword(password)) {
-    register(name, email, password);
-  } else {
-    if (validateName(name) && validateEmail(email) && !validatePassword(password)) {
-    showError('El password debe contener al menos 5 caracteres');
-  } else {
-    if (validateName(name) && !validateEmail(email) && validatePassword(password)) {
-    showError('EL mail no contiene un formato correcto . Ej: email@email.com');
+    // Lógica de registro
+    if (
+      validateName(name) &&
+      validateEmail(email) &&
+      validatePassword(password)
+    ) {
+      register(name, email, password);
     } else {
-    if (!validateName(name) && validateEmail(email) && validatePassword(password)) {
-    showError('El campo NOMBRE no puede quedar vacio');
+      if (
+        validateName(name) &&
+        validateEmail(email) &&
+        !validatePassword(password)
+      ) {
+        showError("El password debe contener al menos 5 caracteres");
+      } else {
+        if (
+          validateName(name) &&
+          !validateEmail(email) &&
+          validatePassword(password)
+        ) {
+          showError(
+            "EL mail no contiene un formato correcto . Ej: email@email.com"
+          );
+        } else {
+          if (
+            !validateName(name) &&
+            validateEmail(email) &&
+            validatePassword(password)
+          ) {
+            showError("El campo NOMBRE no puede quedar vacio");
+          }
+        }
+      }
     }
-    }}
-  }
-});
+  });
 
 function validateName(name) {
   return name.trim().length > 5;
@@ -94,32 +114,27 @@ function validatePassword(password) {
   return password.length >= 5;
 }
 
-
 function register(name, email, password) {
   const user = { name, email, password };
   createUser(user)
     .then(() => {
-      showSuccess('Registro exitoso');
-      window.location.href="login.html";
-
+      showSuccess("Registro exitoso");
+      window.location.href = "login.html";
     })
-    .catch(error => {
-      showError('Error al realizar el registro');
+    .catch((error) => {
+      showError("Error al realizar el registro");
       console.error(error);
     });
 }
 
 function showError(message) {
-  const messageElement = document.getElementById('message');
+  const messageElement = document.getElementById("message");
   messageElement.textContent = message;
-  messageElement.style.color = 'red';
+  messageElement.style.color = "red";
 }
 
 function showSuccess(message) {
-  const messageElement = document.getElementById('message');
+  const messageElement = document.getElementById("message");
   messageElement.textContent = message;
-  messageElement.style.color = 'green';
+  messageElement.style.color = "green";
 }
-
-
-

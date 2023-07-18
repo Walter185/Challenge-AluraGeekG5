@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" href="/assets/img/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/products.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/products.css" />
     <title>AluraGeek | Administrador</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header container" id="idHeader"></header>
 
-
     <section class="products">
-        <div class="products__title">
-            <h2>Todos los Productos</h2> 
-            <a href="add-product.html"><button class="product-btn">Agregar Producto</button></a>
-        </div>
-
-        <section class="products-section" data-allProducts></section>
-        
-    </section> 
-
+      <div class="products__title">
+        <h2>Todos los Productos</h2>
+        <a href="add-product.html"
+          ><button class="product-btn">Agregar Producto</button></a
+        >
+      </div>
+      <section class="products-section" data-allProducts></section>
+    </section>
 
     <footer class="pie" id="idFooter"></footer>
     <script src="../controllers/list-products.js" type="module"></script>
     <script src="../services/login-service.js" type="module"></script>
     <script src="../services/context.js" type="module"></script>
-</body>
+  </body>
 </html>

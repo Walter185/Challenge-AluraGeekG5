@@ -1,15 +1,15 @@
 main {
-    background: rgb(245, 245, 245);
-    padding: 16px;
+  background: rgb(245, 245, 245);
+  padding: 16px;
 }
 
 .product-add__title {
-    display: flex;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    margin: 0 auto;
-    justify-content: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .product-add__input__url,
@@ -18,134 +18,131 @@ main {
 .product-add__input__category,
 .product-add__input__category__options,
 .product-add__textarea__description,
-.product-add__btn { 
-    width: 40%;
-    display: flex;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 8px 12px 13px 12px;
-    border-radius: 4px;
-    height: 30px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 16px;
-    border: solid rgb(207, 203, 203) 0.5px;
+.product-add__btn {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 8px 12px 13px 12px;
+  border-radius: 4px;
+  height: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 16px;
+  border: solid rgb(207, 203, 203) 0.5px;
 }
 
 .product-add__textarea__description {
-    height: 81px;
+  height: 81px;
 }
 
 .product-add__input__category__options {
-    height: 50px;
-    width: 42%;
+  height: 50px;
+  width: 42%;
 }
 
 .product-add__btn {
-    background: #2A7AE4;
-    color: #FFFFFF;
-    height: 45px;
-    width: 42%;
-    margin-bottom: 25px;
-    cursor: pointer;
+  background: #2a7ae4;
+  color: #ffffff;
+  height: 45px;
+  width: 42%;
+  margin-bottom: 25px;
+  cursor: pointer;
 }
 
-
 @media screen and (min-width: 0) {
-    .product-add__input__category,
-    .product-add__input__category__options,
-    .product-add__input__name,
-    .product-add__input__price,
-    .product-add__btn,
-    .product-add__textarea__description,
-    .product-add__input__url {
-        width: -webkit-fill-available;
-    }
-        .admin__btn {
-            margin-left: -200px;
-            width: 150px;
-            height: 35px;
-            position: absolute;
-        }
+  .product-add__input__category,
+  .product-add__input__category__options,
+  .product-add__input__name,
+  .product-add__input__price,
+  .product-add__btn,
+  .product-add__textarea__description,
+  .product-add__input__url {
+    width: -webkit-fill-available;
+  }
+  .admin__btn {
+    margin-left: -200px;
+    width: 150px;
+    height: 35px;
+    position: absolute;
+  }
 
-        .logo__texto__lupa-mobile {
-            margin-left: 320px;
-            position: absolute;
-            margin-top: 5px;
-        }
+  .logo__texto__lupa-mobile {
+    margin-left: 320px;
+    position: absolute;
+    margin-top: 5px;
+  }
 
-        .admin__btn {
-            background: #ffff;
-            border-color: #2A7AE4;
-            font-family: 'Raleway', sans-serif;
-            color: #2A7AE4;
-            font-weight: 600;
-            width: 150px;
-            height: 40px;
-            border-style: solid; 
-            cursor: pointer;
-            margin-left: -200px;
-            margin-top: -5px;
-            }
-    }    
+  .admin__btn {
+    background: #ffff;
+    border-color: #2a7ae4;
+    font-family: "Raleway", sans-serif;
+    color: #2a7ae4;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+    border-style: solid;
+    cursor: pointer;
+    margin-left: -200px;
+    margin-top: -5px;
+  }
+}
 
 @media screen and (min-width: 768px) {
-    .admin__btn {
-        background: #ffff;
-        border-color: #2A7AE4;
-        font-family: 'Raleway', sans-serif;
-        color: #2A7AE4;
-        font-weight: 600;
-        width: 150px;
-        height: 40px;
-        border-style: solid; 
-        cursor: pointer;
-        margin-left: 120px;
-        }
+  .admin__btn {
+    background: #ffff;
+    border-color: #2a7ae4;
+    font-family: "Raleway", sans-serif;
+    color: #2a7ae4;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+    border-style: solid;
+    cursor: pointer;
+    margin-left: 120px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .product-add__input__category,
-    .product-add__input__category__options,
-    .product-add__input__name,
-    .product-add__input__price,
-    .product-add__textarea__description,
-    .product-add__input__url {
+  .product-add__input__category,
+  .product-add__input__category__options,
+  .product-add__input__name,
+  .product-add__input__price,
+  .product-add__textarea__description,
+  .product-add__input__url {
     width: 559px;
     height: 45px;
+  }
 
-    }
-
-    .product-add__textarea__description {
+  .product-add__textarea__description {
     height: 81px;
-    }
+  }
 
-    .product-add__input__category__options {
-        width: 585px;
-        height: 55px;
-    }
+  .product-add__input__category__options {
+    width: 585px;
+    height: 55px;
+  }
 
-    .product-add__btn {
-        width: 585px;
-    }
+  .product-add__btn {
+    width: 585px;
+  }
 
-    .product-add__title {
-        font-weight: 700;
-    }
+  .product-add__title {
+    font-weight: 700;
+  }
 
-    
-.admin__btn {
+  .admin__btn {
     background: #ffff;
-    border-color: #2A7AE4;
-    font-family: 'Raleway', sans-serif;
-    color: #2A7AE4;
+    border-color: #2a7ae4;
+    font-family: "Raleway", sans-serif;
+    color: #2a7ae4;
     font-weight: 600;
     width: 200px;
     height: 50px;
     cursor: pointer;
     margin-left: -300px;
-    }
+  }
 }

@@ -1,4 +1,4 @@
-import { productServices} from '../services/product-service.js';
+import { productServices } from "../services/product-service.js";
 
 let cad = `
 <div class="header__container__add">
@@ -19,10 +19,10 @@ let cad = `
   <img src="../assets/img/lupa.png" alt="lupa" />
 </div>
 </div>
-`
-document.getElementById("idHeader").innerHTML=cad;
+`;
+document.getElementById("idHeader").innerHTML = cad;
 
-cad=`
+cad = `
 <div class="pie__container">
 <div class="pie__items">
   <img class="pie__img" src="../assets/img/logo1.png" alt="logo" />      
@@ -54,16 +54,18 @@ cad=`
 <div class="pie__info">
   <p class="pie__nombre">Desarrollado por Walter Liendo <br>  2023 </p>
 </div>
-`
-document.getElementById("idFooter").innerHTML=cad;
+`;
+document.getElementById("idFooter").innerHTML = cad;
 
 /*********************/
 
 const getURL = new URL(window.location);
 const id = getURL.searchParams.get("id");
 
-productServices.getOneProduct(id).then((datos) => {
-  const productContainer = document.getElementById("productDetails");  
+productServices
+  .getOneProduct(id)
+  .then((datos) => {
+    const productContainer = document.getElementById("productDetails");
 
     const contenido = `
     <div class="product__img" style="background-image: url('${datos.imageUrl}');background-size: contain ;">
@@ -73,8 +75,8 @@ productServices.getOneProduct(id).then((datos) => {
 
       <p>${datos.price}</p>
       `;
-  productContainer.innerHTML = contenido;
-})
-.catch((error) => {
-  console.error("Error al obtener los detalles del producto:", error);
-});
+    productContainer.innerHTML = contenido;
+  })
+  .catch((error) => {
+    console.error("Error al obtener los detalles del producto:", error);
+  });

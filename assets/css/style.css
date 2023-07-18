@@ -1,12 +1,12 @@
-  :root {
-    font-family: "Releway", sans-serif;
-  }
+:root {
+  font-family: "Releway", sans-serif;
+}
 
-  body {
-    scroll-behavior: smooth;
-    background-color: #ebebeb;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Releway", sans-serif;
-  }
+body {
+  scroll-behavior: smooth;
+  background-color: #ebebeb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Releway", sans-serif;
+}

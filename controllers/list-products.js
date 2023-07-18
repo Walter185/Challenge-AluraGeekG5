@@ -1,4 +1,4 @@
-import { productServices} from '../services/product-service.js';
+import { productServices } from "../services/product-service.js";
 
 let cad = `
 <div class="header__container__add">
@@ -19,10 +19,10 @@ let cad = `
   <img src="../assets/img/lupa.png" alt="lupa" />
 </div>
 </div>
-`
-document.getElementById("idHeader").innerHTML=cad;
+`;
+document.getElementById("idHeader").innerHTML = cad;
 
-cad=`
+cad = `
 <div class="pie__container">
 <div class="pie__items">
   <img class="pie__img" src="../assets/img/logo1.png" alt="logo" />      
@@ -54,15 +54,15 @@ cad=`
 <div class="pie__info">
   <p class="pie__nombre">Desarrollado por Walter Liendo <br>  2023 </p>
 </div>
-`
-document.getElementById("idFooter").innerHTML=cad;
+`;
+document.getElementById("idFooter").innerHTML = cad;
 
 /*********************/
 
 const getProducts = (name, price, imageUrl, id) => {
-    const card = document.createElement("div");
+  const card = document.createElement("div");
 
-    const contenido = `
+  const contenido = `
     <div class="producto">
         <div class="producto__container">
             <button class="buttonDelete" type="button">
@@ -106,22 +106,22 @@ productos.addEventListener("click", async (evento) => {
 });
 
 const render = async () => {
-    try {
-      const listaProductos = await productServices.allProducts();
+  try {
+    const listaProductos = await productServices.allProducts();
 
     listaProductos.forEach((producto) => {
-        productos.appendChild(
-            getProducts( 
-                producto.name,
-                producto.price,
-                producto.imageUrl,
-                producto.id
-      )
-    );
-  });
-} catch (err) {
-  console.log(err);
-}
+      productos.appendChild(
+        getProducts(
+          producto.name,
+          producto.price,
+          producto.imageUrl,
+          producto.id
+        )
+      );
+    });
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 render();

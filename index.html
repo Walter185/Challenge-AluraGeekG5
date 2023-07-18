@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" href="/assets/img/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/banner.css">
-    <link rel="stylesheet" href="assets/css/products.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/banner.css" />
+    <link rel="stylesheet" href="assets/css/products.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"
+    />
     <title>AluraGeek | Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header container" id="idHeader"></header>
 
     <section class="general">
-        <div class="products__container">
-            <!-- <ul id="searchResults"></ul> -->
-            <div class="products__title">
-                <h2 class="categoria__titulo">Star Wars</h2>
-            </div>
-            <div >
-                <a href="./pages/allproduct.html"  class="verTodo">Ver todo <img src="./assets/img/Vector.png" alt="ver todo" class="vector"></a>
-             </div>      
+      <div class="products__container">
+        <!-- <ul id="searchResults"></ul> -->
+        <div class="products__title">
+          <h2 class="categoria__titulo">Star Wars</h2>
         </div>
-        <section class="productos" data-starwars>
-        </section>
-        <div class="products__container">
-            <!-- <ul id="searchResults"></ul> -->
-            <div class="products__title">
-                <h2 class="categoria__titulo">Consolas</h2>
-            </div>
-            <div >
-                <a href="./pages/allproduct.html"  class="verTodo">Ver todo <img src="./assets/img/Vector.png" alt="ver todo" class="vector"></a>
-             </div>     
+        <div>
+          <a href="./pages/allproduct.html" class="verTodo"
+            >Ver todo
+            <img src="./assets/img/Vector.png" alt="ver todo" class="vector"
+          /></a>
         </div>
-        <section class="productos" data-consolas>
-        </section>
-        <div class="products__container">
-            <!-- <ul id="searchResults"></ul> -->
-            <div class="products__title">
-                <h2 class="categoria__titulo">Diversos</h2>
-            </div>
-            <div >
-               <a href="./pages/allproduct.html"  class="verTodo">Ver todo <img src="./assets/img/Vector.png" alt="ver todo" class="vector"></a>
-            </div>      
+      </div>
+      <section class="productos" data-starwars></section>
+      <div class="products__container">
+        <!-- <ul id="searchResults"></ul> -->
+        <div class="products__title">
+          <h2 class="categoria__titulo">Consolas</h2>
         </div>
-        <section class="productos" data-diversos>
-        </section>
+        <div>
+          <a href="./pages/allproduct.html" class="verTodo"
+            >Ver todo
+            <img src="./assets/img/Vector.png" alt="ver todo" class="vector"
+          /></a>
+        </div>
+      </div>
+      <section class="productos" data-consolas></section>
+      <div class="products__container">
+        <!-- <ul id="searchResults"></ul> -->
+        <div class="products__title">
+          <h2 class="categoria__titulo">Diversos</h2>
+        </div>
+        <div>
+          <a href="./pages/allproduct.html" class="verTodo"
+            >Ver todo
+            <img src="./assets/img/Vector.png" alt="ver todo" class="vector"
+          /></a>
+        </div>
+      </div>
+      <section class="productos" data-diversos></section>
     </section>
-     
-     
-<footer class="pie" id="idFooter"></footer>
-<script src="./controllers/products.js" type="module"></script>;
-<script src="./controllers/search.js" type="module"></script>;
-<script src="./controllers/index.js" type="module"></script>;
-</body>
+
+    <footer class="pie" id="idFooter"></footer>
+    <script src="./controllers/products.js" type="module"></script>
+    <script src="./controllers/search.js" type="module"></script>
+    <script src="./controllers/index.js" type="module"></script>
+  </body>
 </html>
