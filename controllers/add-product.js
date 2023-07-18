@@ -36,6 +36,27 @@ let cad=`
 `
 document.getElementById("idFooter").innerHTML=cad;
 
+cad =`
+  <div class="header__container__add">
+  <div class="logo__container">
+      <a href="/"><img class="logo__img" src="../assets/img/logo1.png" alt="logo" /></a>
+      <input class="logo__texto" type="text" placeholder="¿Qué deseas búscar?" />
+      <div class="logo__texto__lupa">
+          <img src="../assets/img/lupa.png" alt="lupa">
+      </div>
+  </div>
+  <div class="logo__texto__lupa-mobile">
+      <img src="../assets/img/lupa.png" alt="lupa">
+  </div>
+  <div>
+    <button type="submit" class="admin__btn">Menú Administrador</button>
+  </div>
+  </div>
+`
+document.getElementById("idHeader").innerHTML=cad;
+
+
+
 const form = document.querySelector("[data-form]");
 
 form.addEventListener("submit", (evento) => {

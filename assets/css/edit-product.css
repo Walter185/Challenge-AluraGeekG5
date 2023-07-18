@@ -16,7 +16,6 @@ main {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    padding: 30px;
 }
 
 
@@ -63,15 +62,116 @@ main {
       border: solid rgb(207, 203, 203) 0.5px;
   }
 
-  .product-edit__input__category__options {
+  .product-edit__textarea__description {
+    height: 81px;
+}
+
+.product-edit__input__category__options {
     height: 50px;
     width: 42%;
-  }
-  
-  .product-edit__btn {
+}
+
+.product-edit__btn {
     background: #2A7AE4;
     color: #FFFFFF;
     height: 45px;
     width: 42%;
     margin-bottom: 25px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 0) {
+  .product-edit__input__category,
+  .product-edit__input__category__options,
+  .product-edit__input__name,
+  .product-edit__input__price,
+  .product-edit__btn,
+  .product-edit__textarea__description,
+  .product-edit__input__url {
+      width: -webkit-fill-available;
   }
+      .admin__btn {
+          margin-left: -200px;
+          width: 150px;
+          height: 35px;
+          position: absolute;
+      }
+
+      .logo__texto__lupa-mobile {
+          margin-left: 320px;
+          position: absolute;
+          margin-top: 5px;
+      }
+
+      .admin__btn {
+          background: #ffff;
+          border-color: #2A7AE4;
+          font-family: 'Raleway', sans-serif;
+          color: #2A7AE4;
+          font-weight: 600;
+          width: 150px;
+          height: 40px;
+          border-style: solid; 
+          cursor: pointer;
+          margin-left: -200px;
+          margin-top: -5px;
+          }
+  }    
+
+@media screen and (min-width: 768px) {
+  .admin__btn {
+      background: #ffff;
+      border-color: #2A7AE4;
+      font-family: 'Raleway', sans-serif;
+      color: #2A7AE4;
+      font-weight: 600;
+      width: 150px;
+      height: 40px;
+      border-style: solid; 
+      cursor: pointer;
+      margin-left: 120px;
+      }
+}
+
+@media screen and (min-width: 992px) {
+  .product-edit__input__category,
+  .product-edit__input__category__options,
+  .product-edit__input__name,
+  .product-edit__input__price,
+  .product-edit__textarea__description,
+  .product-edit__input__url {
+  width: 559px;
+  height: 45px;
+
+  }
+
+  .product-edit__textarea__description {
+  height: 81px;
+  }
+
+  .product-edit__input__category__options {
+      width: 585px;
+      height: 55px;
+  }
+
+  .product-edit__btn {
+      width: 585px;
+  }
+
+  .product-edit__title {
+      font-weight: 700;
+  }
+
+  
+.admin__btn {
+  background: #ffff;
+  border-color: #2A7AE4;
+  font-family: 'Raleway', sans-serif;
+  color: #2A7AE4;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: -300px;
+  }
+}
