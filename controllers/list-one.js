@@ -59,60 +59,22 @@ document.getElementById("idFooter").innerHTML=cad;
 
 /*********************/
 
-const getProducts = (name, price, imageUrl, id) => {
-    const card = document.createElement("div");
+const getURL = new URL(window.location);
+const id = getURL.searchParams.get("id");
+
+productServices.getOneProduct(id).then((datos) => {
+  const productContainer = document.getElementById("productDetails");  
 
     const contenido = `
-    <div class="producto">
-    <a class="ver-producto" href="../pages/one.html?id=${id}">
-      <img class="producto__img" src="${imageUrl}" alt="img">
-    </a>
-    <h1 class="producto__name"> ${name} </h1>
-    <p class="producto__price">USD ${(price)}</p>
-    <a class="producto__ver" href="../pages/one.html?id=${id}">
-    Ver Producto</a>
-  </div>  
-    `;
-  card.innerHTML = contenido;
-  card.dataset.id = id;
-  return card;
-};
+    <div class="product__img" style="background-image: url('${datos.imageUrl}');background-size: contain ;">
+    <img src="${datos.imageUrl}" /></div>
+      <h3>${datos.name}</h3>
+      <p>${datos.description}</p>
 
-const productos = document.querySelector("[data-consolas]");
-
-productos.addEventListener("click", async (evento) => {
-  let deleteButton = evento.target.className === "deleteImage";
-  if (deleteButton) {
-    const producto = evento.target.closest("[data-id]");
-    let id = producto.dataset.id;
-    productServices
-      .deleteProduct(id)
-      .then((res) => {
-        producto.remove();
-        console.log(res);
-      })
-      .catch((err) => console.log(err));
-  }
+      <p>${datos.price}</p>
+      `;
+  productContainer.innerHTML = contenido;
+})
+.catch((error) => {
+  console.error("Error al obtener los detalles del producto:", error);
 });
-
-const consolas = document.querySelector("[data-consolas]");
-
-const render = async () => {
-  try {
-   const listaProductos = await productServices.getOneCategory("Consolas");
-    listaProductos.forEach((elemento) => {
-      consolas.appendChild(
-        getProducts(
-          elemento.name,
-          elemento.price,
-          elemento.imageUrl,
-          elemento.id
-        )
-      );
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-render();
