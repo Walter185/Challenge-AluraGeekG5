@@ -64,7 +64,7 @@ const getProducts = (name, price, imageUrl, id) => {
 
   const contenido = `
     <div class="producto">
-    <a class="ver-producto" href="./pages/one.html?id=${id}">
+    <a class="ver-producto" href="./one.html?id=${id}">
       <img class="producto__img" src="${imageUrl}" alt="img">
     </a>
     <h1 class="producto__name"> ${name} </h1>
