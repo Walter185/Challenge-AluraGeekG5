@@ -38,7 +38,7 @@ document.getElementById("idFooter").innerHTML = cad;
 cad = `
     <div class="header__container__add">
     <div class="logo__container">
-    <a href="/"
+    <a href="../index.html"
         ><img class="logo__img" src="../assets/img/logo1.png" alt="logo"
     /></a>
     <input
