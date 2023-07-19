@@ -8,12 +8,12 @@ const nuevoProducto = (name, price, imageUrl, id) => {
   const card = document.createElement("div");
   const contenido = `
         <div class="producto">
-          <a class="ver-producto" href="../pages/one.html?id=${id}">
+          <a class="ver-producto" href="./pages/one.html?id=${id}">
             <img class="producto__img" src="${imageUrl}" alt="img">
           </a>
           <h1 class="producto__name"> ${name} </h1>
           <p class="producto__price">USD ${price}</p>
-          <a class="producto__ver" href="../pages/one.html?id=${id}">
+          <a class="producto__ver" href="./pages/one.html?id=${id}">
           Ver Producto</a>
         </div>   
     `;
