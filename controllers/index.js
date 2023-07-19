@@ -3,15 +3,10 @@ import { sessionContext, getSessionContext } from "../services/context.js";
 let cad = `
 <div class="header__container">
 <div class="logo__container">
-<a href="../index.html"
-><img class="logo__img" src="../assets/img/logo1.png" alt="logo"
-/></a>
-<input
-class="logo__texto"
-type="text"
-placeholder="¿Qué deseas búscar?"
-/>
-        <img src="assets/img/lupa.png" alt="lupa">
+    <a href="./index.html"><img class="logo__img" src="./assets/img/logo1.png" alt="logo" /></a>
+    <input class="logo__texto" type="text" id="searchInput" placeholder="¿Qué deseas búscar?" />
+    <div class="logo__texto__lupa">
+        <img src="./assets/img/lupa.png" alt="lupa">
     </div>
 </div>
 <a href="./pages/login.html" class="login">
@@ -19,7 +14,7 @@ placeholder="¿Qué deseas búscar?"
 </a>
 
 <div class="logo__texto__lupa-mobile">
-    <img src="assets/img/lupa.png" alt="lupa">
+    <img src="./assets/img/lupa.png" alt="lupa">
 </div>
 </div> 
 
@@ -36,7 +31,7 @@ document.getElementById("idHeader").innerHTML = cad;
 cad = `
 <div class="pie__container">
 <div class="pie__items">
-  <img class="pie__img" src="../assets/img/logo1.png" alt="logo" />      
+  <img class="pie__img" src="./assets/img/logo1.png" alt="logo" />      
   <nav class="pie__nav">
       <ul class="pie__lista">
           <li class="pie__btn"><a class="pie__link" href="">Quienes somos</a></li>
