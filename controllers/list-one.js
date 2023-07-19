@@ -68,15 +68,61 @@ productServices
     const productContainer = document.getElementById("productDetails");
 
     const contenido = `
-    <div class="product__img" style="background-image: url('${datos.imageUrl}');background-size: contain ;">
-    <img src="${datos.imageUrl}" /></div>
-      <h3>${datos.name}</h3>
-      <p>${datos.description}</p>
-
-      <p>${datos.price}</p>
-      `;
+        <div class="detalle__container">
+          <img src="${datos.imageUrl}" alt="Imagen detalle" class="detalle__img" />
+        </div>
+        <div class="detalle__info">
+          <h3 class="detalle__titulo">${datos.name}</h3>
+          <p class="detalle__precio">$ ${datos.price}</p>
+          <p>${datos.description}</p>
+        </div>
+    `;
     productContainer.innerHTML = contenido;
+
+    const one = document.querySelector("[data-one]");
+    const cat = getURL.searchParams.get("category");
+    const render = async () => {
+      try {
+        const listaProductos = await productServices.getOneCategory("[cat]");
+        listaProductos.forEach((elemento) => {
+          one.appendChild(
+            nuevoProducto(
+              elemento.name,
+              elemento.price,
+              elemento.imageUrl,
+              elemento.id
+            )
+          );
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    
+    render();
+
   })
   .catch((error) => {
     console.error("Error al obtener los detalles del producto:", error);
   });
+
+  
+  const nuevoProducto = (name, price, imageUrl, id) => {
+    const card = document.createElement("div");
+    const contenido = `
+          
+          <div class="producto">
+            <a class="ver-producto" href="../pages/one.html?id=${id}">
+              <img class="producto__img" src="${imageUrl}" alt="img">
+            </a>
+            <h1 class="producto__name"> ${name} </h1>
+            <p class="producto__price">USD ${price}</p>
+            <a class="producto__ver" href="../pages/one.html?id=${id}">
+            Ver Producto</a>
+          </div>   
+      `;
+    card.innerHTML = contenido;
+    card.dataset.id = id;
+  
+    return card;
+  };

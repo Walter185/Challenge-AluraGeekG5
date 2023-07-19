@@ -21,7 +21,7 @@ const getOneCategory = (category) =>
     .then((response) => response.json())
     .catch((error) => console.log(error));
 
-//POST
+// METHOD POST
 const addProduct = (imageUrl, category, name, price, description) => {
   // return   fetch(`http://localhost:3000/producto`, {
   return fetch(`https://64af610dc85640541d4e50bf.mockapi.io/producto`, {
@@ -44,7 +44,7 @@ const addProduct = (imageUrl, category, name, price, description) => {
   });
 };
 
-// PUT / PATCH
+// METHOD PUT
 const modifyProduct = async (
   id,
   imageUrl,
@@ -55,7 +55,7 @@ const modifyProduct = async (
 ) => {
   // return   fetch(`http://localhost:3000/producto/${id}`, {
   return fetch(`https://64af610dc85640541d4e50bf.mockapi.io/producto/${id}`, {
-    method: "PATCH",
+    method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
@@ -73,7 +73,7 @@ const modifyProduct = async (
     .catch((error) => console.log(error));
 };
 
-//DELETE
+// METHOD DELETE
 const deleteProduct = async (id) => {
   // return await fetch(`http://localhost:3000/producto/${id}`, {
   return await fetch(
