@@ -38,9 +38,14 @@ document.getElementById("idFooter").innerHTML = cad;
 cad = `
   <div class="header__container__add">
   <div class="logo__container">
-      <a href="../index.html"><img class="logo__img" src="../assets/img/logo1.png" alt="logo" /></a>
-      <input class="logo__texto" type="text" placeholder="¿Qué deseas búscar?" />
-      <div class="logo__texto__lupa">
+  <a href="../index.html"
+  ><img class="logo__img" src="../assets/img/logo1.png" alt="logo"
+/></a>
+<input
+  class="logo__texto"
+  type="text"
+  placeholder="¿Qué deseas búscar?"
+/>
           <img src="../assets/img/lupa.png" alt="lupa">
       </div>
   </div>
